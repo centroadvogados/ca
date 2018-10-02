@@ -1,0 +1,112 @@
+<?php
+/**
+ * class TDataGridColumn
+ * Representa uma coluna de uma listagem
+ */
+class TDataGridColumn
+{
+    private $name;
+    private $label;
+    private $align;
+    private $width;
+    private $action;
+    private $transformer;
+    
+    /**
+     * método __construct()
+     * Instancia uma coluna nova
+     * @param  $name  = nome da coluna no banco de dados
+     * @param  $label = rótulo de texto que será exibido
+     * @param  $align = alinhamento da coluna (left, center, right)
+     * @param  $width = largura da coluna (em pixels)
+     */
+    public function __construct($name, $label, $align, $width)
+    {
+        // atribui os parâmetros às propriedades do objeto
+        $this->name  = $name;
+        $this->label = $label;
+        $this->align = $align;
+        $this->width = $width;
+    }
+    
+    /**
+     * método getName()
+     * Retorna o nome da coluna no banco de dados
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+    
+    /**
+     * método getLabel()
+     * Retorna o nome do rótulo de texto da coluna
+     */
+    public function getLabel()
+    {
+        return $this->label;
+    }
+    
+    /**
+     * método getAlign()
+     * Retorna o alinhamento da coluna (left, center, right)
+     */
+    public function getAlign()
+    {
+        return $this->align;
+    }
+    
+    /**
+     * método getWidth()
+     * Retorna a largura da coluna (em pixels)
+     */
+    public function getWidth()
+    {
+        return $this->width;
+    }
+    
+    /**
+     * método setAction()
+     * Define uma ação a ser executada quando o usuário
+     * clicar sobre o título da coluna
+     * @param  $action = objeto TAction contendo a ação
+     */
+    public function setAction(TAction $action)
+    {
+        $this->action = $action;
+    }
+    
+    /**
+     * método getAction()
+     * Retorna a ação vinculada à coluna
+     */
+    public function getAction()
+    {
+        // verifica se a coluna possui ação
+        if ($this->action)
+        {
+            return $this->action->serialize();
+        }
+    }
+    
+    /**
+     * método setTransformer()
+     * Define uma função (callback) a ser aplicada sobre
+     * todo dado contido nesta coluna
+     * @param  $callback = função do PHP ou do usuário
+     */
+    public function setTransformer($callback)
+    {
+        $this->transformer = $callback;
+    }
+
+    /**
+     * método getTransformer()
+     * Retorna a função (callback) aplicada à coluna
+     */
+    public function getTransformer()
+    {
+        return $this->transformer;
+    }
+}
+?>

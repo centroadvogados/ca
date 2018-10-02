@@ -1,0 +1,36 @@
+ 		@font-face {
+		     font-family: beautiful;
+		     src: url('../css/fonts/Comicate.ttf');
+		}
+		p {
+			margin:0px auto;
+			width:400px;
+			text-align:center;
+			font:38px/25px beautiful, Arial, Tahoma, Sans-serif;
+		}
+		p small {font-size:10px; font-family:verdana;}
+                
+                @font-face {
+		    font-family: Dog Rough;
+		    src: url('../css/fonts/Dog Rough.otf');
+                }
+		fbe {
+			margin:0px auto;
+			width:400px;
+			text-align:center;
+			font:36px Dog Rough, Arial, Tahoma, Sans-serif;
+		}
+		fbe small {font-size:10px; font-family:Dog Rough;}
+                
+                @font-face {
+		    font-family: JustSignature;
+		    src: url('../css/fonts/JustSignature.ttf');
+		}		
+		ass {
+			margin:0px auto;
+			width:400px;
+			text-align:center;
+			font:18px JustSignature, Arial, Tahoma, Sans-serif;
+		}		
+		ass small {font-size:10px; font-family:JustSignature;}
+

@@ -1,0 +1,53 @@
+
+	body{
+		font-family:arial
+	}
+
+	.clear {
+		clear:both
+	}
+
+	#gallery {
+		top:-20px;
+		position:relative;
+		height:256px;
+	}
+	
+	#gallery a {
+		float:left;
+		position:absolute;
+	}
+	
+	#gallery a img {
+		border:none;
+	}
+	
+	#gallery a.show {
+		top:90px;
+		z-index:500
+	}
+
+	#gallery .caption {
+		z-index:600; 
+		background-color:#000; 
+		color:#ffffff; 
+		height:100px; 
+		width:335%; 
+		position:relative;
+		bottom:0;
+	}
+
+	#gallery .caption .content {
+		margin:5px
+	}
+	
+	#gallery .caption .content h3 {
+		margin:0;
+		padding:0;
+		color:#1DCCEF;
+	}
+	
+	.imgg 	{
+		border-radius:10px;
+	}
+	

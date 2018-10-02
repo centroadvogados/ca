@@ -1,0 +1,261 @@
+/*!
+ * Painel Mobile v1.0.0 
+ */ 
+
+/* Funciona somente com JavaScript, se nao estiver presente , nao mostrara loader */
+	.no-js #loader 		{ display: none;  }
+	.js #loader 		{ display: block; position: absolute; left: 100px; top: 0; }
+	.se-pre-con 		{
+		position	: fixed;
+		left		: 0px;
+		top			: 0px;
+		width		: 100%;
+		height		: 100%;
+		z-index		: 9999;
+		background	: url(../imgs/ajax5.gif) center no-repeat #fff;
+	}
+
+	.content {
+		background	: transparent;
+		background-size: 100%;
+		/*simple-pre-loader*/
+		width		: 100%;
+	} 
+
+/*   Final do Caregamento */
+  
+	.canais{
+		display			:block;
+		padding			:4px;
+		margin-top	    :5px;
+		line-height		:1.42857143;
+		background-color:transparent;
+		border			:0px solid #ddd;
+		border-radius	:4px;
+	}
+
+	.direita    {  float 	: right; }
+
+	.esquerda   {  float 	: left;  }
+
+	.conectado 	{  block 	: none;  }
+	
+	.imgg		{  border-radius:	5px;  }
+	
+	.imgg2		{  
+			       border-radius:	2px;
+				   float 		:  left;
+				   width		: 100px;
+				   padding-right:  10px;
+	}
+
+	.portal	        {
+					position	: relative;		
+					top			: -4px;
+					width		:102%;
+					height 		:600px;
+					margin-left	:-25px;
+					border		:0px solid #00B2EE;
+	}
+
+	.transparente{
+					background-color: transparent;
+	} 
+	
+#ajjax { 	  
+		  position	  	  : absolute;
+		  width  		  : 31px;
+		  height 		  : 31px;
+		  top			  : 50%;
+	      padding-top 	  : 0px;
+  		  background-color: transparent;
+		  left  		  : 50%;
+		  margin-left	  :-15px;
+		  z-index		  : 1050;
+		  display		  : none;
+	}
+
+#login { 	  
+			position	  		: absolute;
+			width  		  		: 410px;
+			height 		  		: 300px;
+			left				: 50%;
+			top    		  		: 150px;
+			margin-left	  	    :-210px;
+			z-index		  	    : 1050;
+			border		  		: 1px solid #ccc;
+			padding		  	    : 5px 5px;
+			border-radius	    : 10px;
+			text-align	  		: center;
+			background-color	: #fff;
+			display		  		: none;
+			opacity		  		: 0.90;
+	}		
+	
+#blackbox { 	  
+			position	  		: absolute;
+			width  		  		: 340px;
+			height 		  		: 250px;
+			left				: 50%;
+			top    		  		: 150px;
+			margin-left	  	    :-170px;
+			z-index		  	    : 1060;
+			border		  		: 0px solid #ccc;
+			padding		  	    : 5px 5px;
+			border-radius	    : 10px;
+			text-align	  		: center;
+			background-color	: #fff;
+  		    filter				: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  		    opacity				: .7;		
+			display		  		: none;
+	}	
+
+#registro { 	
+			top			  		: 70px;	
+			padding		  		: 0px 10px;
+			border-radius	    : 0px 0px 10px 10px;
+			z-index		  		: 1055;
+	}
+
+#tabela { 	  
+			padding		  		: 0px 15px 0px 15px;
+			border-radius		: 10px;
+			border				: 0px solid #ddd;
+	}		
+	
+#construcao { 	  
+			padding		  		: 0px 15px 0px 15px;
+			border-radius		: 10px;
+			background-color	: transparent;
+			border				: 0px solid #ddd;
+			z-index		  		: 9999;
+	}		
+
+#conteudo { 	 
+			position	  	  	: relative;
+			padding		  		: 3px;
+			border-radius	  	: 3px;
+			border 		  		: 1px solid #333;
+			overflow        	: auto;
+			display		  		: none;
+	}		
+	
+#message 	{ 
+			position			: absolute;
+		    padding-top         : 170px;
+		    padding-left        : 50px;
+			background-color	: transparent;
+			text-align   	    : center;
+			font				: 16px verdana;
+			color				: red;
+			border-bottom       : 0px dashed #b2b2b2;
+	}		
+
+#boxContato 	{ 
+		  left  			    : 5px;
+       	  margin-left			: 0px;
+		  border-radius	 		: 10px;
+		  border 			 	: 0px solid #333;
+		  padding-top    		: 5px;
+	      padding-left    		: 10px;
+	      padding-bottom   	 	: 5px;
+	      padding-right  		: 10px;
+	      background-color		: #000;
+	}
+
+#boxContato:hover 	{    	  		  
+		 background-color	: #312d28;
+	     background-image	: linear-gradient(to right, rgba(255,255,255,.3) 1px, transparent 1px);
+	     background-size	: 5px 5px;
+		}	
+
+
+#fundo1 { 	  
+		  position	  	  : absolute;
+		  width  		  : 100%;
+		  height 	  	  : 100%;
+		  min-height 	  : 100%;
+		  min-width		  : 320px;		  
+		  overflow		  : hidden;	
+		  left			  : 0px;
+		  top			  : 0px;	
+		  z-index		  : 1040;
+		  border 		  : 0px solid #000;
+		  text-align	  : center;
+		  background-color: #000;
+		  display		  : none;
+   		  opacity		  : 0.7;
+		  padding		  : 5px 10px;
+	}	
+
+	
+#fundo2 { 	  
+		  position	  	  	: absolute;
+		  width  		  	: 100%;
+		  height 	  	  	: 100%;
+		  min-height 	  	: 100%;
+		  min-width		  	: 320px;		  
+		  left			   	: 0px;
+		  top			  	: 0px;	
+		  z-index			: 1055;
+		  border 			: 0px solid #000;
+		  text-align		: center;
+		  background-color	: #000; 
+		  display		  	: none;
+   		  opacity		  	: 0.1;
+		  padding		 	: 5px 10px;
+	}
+
+#fundo3 { 	  
+		  position	  	  : absolute;
+		  width  		  : 100%;
+		  height 	  	  : 100%;
+		  min-height 	  : 100%;
+		  min-width		  : 320px;		  
+		  overflow		  : hidden;	
+		  left			  : 0px;
+		  top			  : 0px;	
+		  z-index		  : 1070;
+		  border 		  : 0px solid #000;
+		  text-align	  : center;
+		  background-color: #000;
+		  display		  : none;
+   		  opacity		  : 0.5;
+		  padding		  : 5px 10px;
+	}	
+
+#d2_3 #aviso1	{ 
+		  position	: absolute;
+	   	  width		: 160px;
+		  height	: 144px;
+  		  left  	:-70px;
+       	  top   	:-90px;
+		  z-index	: 9999;
+		  border	: 0px solid #999;
+		  padding	: 5px 18px;
+		  border-radius	: 10px;
+		  text-align	: center;
+  		  background-color: transparent;
+  		  filter	: progid:DXImageTransform.Microsoft.Alpha(Opacity=45);
+  		  opacity	: 0.45;
+		  display 	: none;
+		  background-repeat	: no-repeat;  
+		  background-image	: url('../imgs/speech-bubbles.png'); 
+	} 
+	
+#consulta { 	  
+			position	  		: absolute;
+			width  		  		: 410px;
+			height 		  		: 300px;
+			left				: 50%;
+			top    		  		: 150px;
+			margin-left	  	    :-210px;
+			z-index		  	    : 1080;
+			border		  		: 1px solid #ccc;
+			padding		  	    : 5px 5px;
+			border-radius	    : 10px;
+			text-align	  		: center;
+			background-color	: #fff;
+			display		  		: none;
+			opacity		  		: 0.90;
+	}	

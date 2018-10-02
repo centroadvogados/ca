@@ -1,0 +1,15 @@
+compose require phpoffice/phpword
+
+composer require barryvdh/laravel-dompdf
+Após baixar o pacote precisa registrar o provider e aliases (no Laravel 5.5 não precisa porque o recurso de autodiscover faz isso automaticamente).
+No arquivo /config/app.php em providers adicione:
+Barryvdh\DomPDF\ServiceProvider::class,
+E em aliases adicione:
+
+'PDF' => Barryvdh\DomPDF\Facade::class,
+Para gerar o arquivo de configuração e ter a possibilidade de alterar algumas configurações padrões rode este comando:
+
+php artisan vendor:publish --provider="Barryvdh\DomPDF\ServiceProvider"
+Após rodar o comando irá gerar um arquivo de configuração do DOMPDF em /config/dompdf.php
+
+Feito isso o pacote está instalado e registrado.
